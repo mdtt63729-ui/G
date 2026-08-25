@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GITOFY</string>
+
+    <!-- Common -->
+    <string name="loading">Loading…</string>
+    <string name="retry">Retry</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="ok">OK</string>
+    <string name="back">Back</string>
+    <string name="refresh">Refresh</string>
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="close">Close</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_repositories">Repositories</string>
+    <string name="nav_workflows">Workflows</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_create_project">Create Project</string>
+
+    <!-- Authentication -->
+    <string name="auth_title">Sign in to GitHub</string>
+    <string name="auth_subtitle">Enter your GitHub Personal Access Token to get started</string>
+    <string name="auth_token_hint">Personal Access Token</string>
+    <string name="auth_sign_in">Sign In</string>
+    <string name="auth_sign_out">Sign Out</string>
+    <string name="auth_failed">Authentication failed. Check your token and try again.</string>
+    <string name="auth_expired">Your session has expired. Please sign in again.</string>
+    <string name="auth_revoked">Your token has been revoked. Please sign in again.</string>
+    <string name="auth_insufficient_permission">Additional GitHub permission is required.</string>
+    <string name="auth_sign_out_confirm">Are you sure you want to sign out? All local credentials will be removed.</string>
+    <string name="auth_token_required">Fine-grained PAT with repo and workflow permissions required</string>
+    <string name="auth_secure_notice">Your token is stored securely using Android Keystore. It never appears in logs or analytics.</string>
+
+    <!-- Home Dashboard -->
+    <string name="home_welcome">Welcome</string>
+    <string name="home_repositories">Repositories</string>
+    <string name="home_recent_repos">Recent Repositories</string>
+    <string name="home_active_workflows">Active Workflows</string>
+    <string name="home_recent_activity">Recent Activity</string>
+    <string name="home_create_project">Create Project</string>
+    <string name="home_no_repos">No repositories yet. Create your first repository from a ZIP project.</string>
+    <string name="home_no_workflows">No active workflows.</string>
+
+    <!-- Repository -->
+    <string name="repo_list_title">Repositories</string>
+    <string name="repo_details">Repository Details</string>
+    <string name="repo_name">Repository Name</string>
+    <string name="repo_description">Description</string>
+    <string name="repo_visibility_public">Public</string>
+    <string name="repo_visibility_private">Private</string>
+    <string name="repo_default_branch">Default Branch</string>
+    <string name="repo_branches">Branches</string>
+    <string name="repo_commits">Commits</string>
+    <string name="repo_latest_commit">Latest Commit</string>
+    <string name="repo_workflows">Workflows</string>
+    <string name="repo_open_github">Open in GitHub</string>
+    <string name="repo_empty">No repositories found.</string>
+    <string name="repo_empty_description">Create a new repository from a ZIP project to get started.</string>
+
+    <!-- Create Project -->
+    <string name="create_title">Create New Project</string>
+    <string name="create_select_zip">Select ZIP File</string>
+    <string name="create_zip_selected">ZIP Selected</string>
+    <string name="create_validate">Validate</string>
+    <string name="create_config_repo">Configure Repository</string>
+    <string name="create_review">Review</string>
+    <string name="create_upload">Upload</string>
+    <string name="create_commit_message">Initial commit</string>
+    <string name="create_detected_root">Detected Project Root</string>
+    <string name="create_select_root">Select Project Root</string>
+    <string name="create_repo_exists">Repository already exists.</string>
+    <string name="create_use_existing">Use Existing Repository</string>
+    <string name="create_choose_name">Choose Another Name</string>
+    <string name="create_uploading">Uploading project</string>
+    <string name="create_background_notice">This may continue in the background.</string>
+    <string name="create_invalid_zip">Invalid or corrupted ZIP file.</string>
+    <string name="create_empty_zip">The ZIP file is empty.</string>
+    <string name="create_path_traversal">Unsafe path detected in ZIP. Extraction blocked.</string>
+    <string name="create_oversized">Archive is too large.</string>
+    <string name="create_insufficient_storage">Not enough storage available. Free space and try again.</string>
+
+    <!-- Workflows -->
+    <string name="workflow_list">Workflows</string>
+    <string name="workflow_details">Workflow Details</string>
+    <string name="workflow_trigger">Trigger Workflow</string>
+    <string name="workflow_queued">Queued</string>
+    <string name="workflow_in_progress">In Progress</string>
+    <string name="workflow_success">Success</string>
+    <string name="workflow_failure">Failure</string>
+    <string name="workflow_cancelled">Cancelled</string>
+    <string name="workflow_skipped">Skipped</string>
+    <string name="workflow_timed_out">Timed Out</string>
+    <string name="workflow_unknown">Unknown</string>
+    <string name="workflow_empty">No workflow runs found.</string>
+    <string name="workflow_trigger_confirm">Trigger this workflow on branch %1$s?</string>
+    <string name="workflow_triggered">Workflow triggered successfully.</string>
+    <string name="workflow_trigger_failed">Failed to trigger workflow. %1$s</string>
+    <string name="workflow_select_branch">Select Branch</string>
+
+    <!-- Jobs & Logs -->
+    <string name="job_title">Job</string>
+    <string name="job_steps">Steps</string>
+    <string name="job_waiting">Waiting</string>
+    <string name="job_in_progress">In Progress</string>
+    <string name="job_success">Success</string>
+    <string name="job_failure">Failure</string>
+    <string name="job_skipped">Skipped</string>
+    <string name="logs_title">Logs</string>
+    <string name="logs_empty">No logs available.</string>
+    <string name="logs_loading">Loading logs…</string>
+    <string name="logs_search_hint">Search in logs…</string>
+
+    <!-- Artifacts -->
+    <string name="artifact_title">Artifacts</string>
+    <string name="artifact_download">Download</string>
+    <string name="artifact_downloading">Downloading…</string>
+    <string name="artifact_downloaded">Downloaded</string>
+    <string name="artifact_expired">Expired</string>
+    <string name="artifact_empty">This workflow has no downloadable artifacts.</string>
+    <string name="artifact_download_failed">Download failed. %1$s</string>
+    <string name="artifact_download_complete">Artifact downloaded successfully.</string>
+    <string name="artifact_size">Size: %1$s</string>
+
+    <!-- Settings -->
+    <string name="settings_account">Account</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_data">Data</string>
+    <string name="settings_workflow">Workflow</string>
+    <string name="settings_security">Security</string>
+    <string name="settings_about">About</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_dynamic_color">Dynamic Color</string>
+    <string name="settings_clear_cache">Clear Cache</string>
+    <string name="settings_downloaded_artifacts">Downloaded Artifacts</string>
+    <string name="settings_refresh_behavior">Refresh Behavior</string>
+    <string name="settings_background_sync">Background Sync</string>
+    <string name="settings_credential_status">Credential Status</string>
+    <string name="settings_sensitive_data">Sensitive Data Protection</string>
+    <string name="settings_version">Version</string>
+    <string name="settings_licenses">Open Source Licenses</string>
+    <string name="settings_privacy">Privacy</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_theme_system">System</string>
+    <string name="settings_cache_cleared">Cache cleared successfully.</string>
+
+    <!-- Notifications -->
+    <string name="notif_channel_operations">Operations</string>
+    <string name="notif_channel_workflows">Workflows</string>
+    <string name="notif_upload_complete">Upload Complete</string>
+    <string name="notif_upload_failed">Upload Failed</string>
+    <string name="notif_workflow_complete">Workflow Completed</string>
+    <string name="notif_workflow_failed">Workflow Failed</string>
+    <string name="notif_download_complete">Download Complete</string>
+
+    <!-- Errors -->
+    <string name="error_network">No internet connection. Your local data is still available.</string>
+    <string name="error_git_push">Upload could not be completed. Your local project remains untouched.</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_offline">You\'re offline. Cached information is available.</string>
+    <string name="error_rate_limit">GitHub API rate limit reached. Please try again later.</string>
+    <string name="error_not_found">The requested resource was not found.</string>
+    <string name="error_permission_denied">Permission denied. Check your GitHub token permissions.</string>
+    <string name="error_server">GitHub server error. Please try again later.</string>
+    <string name="error_timeout">Network request timed out. Please try again.</string>
+
+    <!-- Progress -->
+    <string name="progress_validating">Validating ZIP…</string>
+    <string name="progress_extracting">Extracting project…</string>
+    <string name="progress_creating_repo">Creating repository…</string>
+    <string name="progress_initializing_git">Initializing Git…</string>
+    <string name="progress_staging">Staging files…</string>
+    <string name="progress_committing">Committing…</string>
+    <string name="progress_pushing">Pushing to GitHub…</string>
+    <string name="progress_verifying">Verifying…</string>
+    <string name="progress_completed">Completed</string>
+    <string name="progress_uploading">Uploading project</string>
+
+    <!-- Operation States -->
+    <string name="state_idle">Idle</string>
+    <string name="state_queued">Queued</string>
+    <string name="state_running">Running</string>
+    <string name="state_success">Success</string>
+    <string name="state_failed">Failed</string>
+    <string name="state_cancelled">Cancelled</string>
+    <string name="state_retrying">Retrying</string>
+
+    <!-- Empty States -->
+    <string name="empty_title">Nothing here yet</string>
+    <string name="empty_subtitle">Pull to refresh or try again later.</string>
+
+    <!-- About -->
+    <string name="about_version">Version %1$s</string>
+    <string name="about_description">GITOFY is a native Android app for managing GitHub repositories and CI/CD workflows from your phone.</string>
+    <string name="about_made_with">Built with Kotlin, Jetpack Compose, and Material 3.</string>
+</resources>

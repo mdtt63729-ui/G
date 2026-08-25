@@ -1,0 +1,61 @@
+name: AI Gateway CI
+
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - 'app/src/main/java/com/gitofy/ai/**'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'app/src/main/java/com/gitofy/ai/**'
+
+jobs:
+  ai-gateway-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Lint AI Module
+        run: ./gradlew lintDebug
+
+      - name: AI Unit Tests
+        run: ./gradlew testDebugUnitTest --tests "com.gitofy.ai.*"
+
+      - name: AI Routing Tests
+        run: ./gradlew testDebugUnitTest --tests "com.gitofy.ai.routing.*"
+
+      - name: AI Fallback Tests
+        run: ./gradlew testDebugUnitTest --tests "com.gitofy.ai.routing.FallbackSystem*"
+
+      - name: AI Context Filtering Tests
+        run: ./gradlew testDebugUnitTest --tests "com.gitofy.ai.context.*"
+
+      - name: AI Secret Redaction Tests
+        run: ./gradlew testDebugUnitTest --tests "com.gitofy.ai.context.AISecretRedactor*"
+
+      - name: AI Action Safety Tests
+        run: ./gradlew testDebugUnitTest --tests "com.gitofy.ai.action.*"
+
+      - name: AI Patch Validation Tests
+        run: ./gradlew testDebugUnitTest --tests "com.gitofy.ai.action.PatchSafety*"
+
+      - name: AI Security Tests
+        run: ./gradlew testDebugUnitTest --tests "com.gitofy.ai.security.*"
+
+      - name: Upload Test Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-test-results
+          path: app/build/test-results/

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  GITOFY adaptive icon background — the full G+cat logo (already includes its
+  own purple gradient background), stretched with gravity="fill" so it always
+  fills the icon canvas correctly regardless of device density. Using a single
+  density-agnostic (drawable-nodpi) high-res source avoids the bug where a
+  fixed-size bitmap drawn with gravity="center" gets mis-scaled per density
+  bucket and ends up cropped/invisible on the launcher.
+-->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/ic_launcher_adaptive"
+    android:gravity="fill" />

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  GITOFY App Icon Foreground — uses the provided G+cat logo image.
+  The actual PNG (ic_launcher_foreground.png) is placed in mipmap-*
+  density folders. For adaptive icons, the foreground drawable can be
+  a bitmap reference.
+-->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/ic_splash_logo"
+    android:gravity="center" />

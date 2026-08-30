@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme (Material 3) -->
+    <style name="Theme.GITOFY" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+    </style>
+
+    <!-- Splash theme — uses the new G+cat logo -->
+    <style name="Theme.GITOFY.Splash" parent="Theme.GITOFY">
+        <item name="android:windowBackground">@color/splash_background</item>
+    </style>
+
+    <!-- Android 12+ SplashScreen API — uses the new logo as animated icon -->
+    <style name="Theme.GITOFY.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/md_primary</item>
+        <item name="postSplashScreenTheme">@style/Theme.GITOFY</item>
+    </style>
+</resources>

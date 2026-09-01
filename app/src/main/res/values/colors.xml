@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base palette - Sky Blue native default accent -->
+    <color name="md_primary">#0B72B9</color>
+    <color name="md_on_primary">#FFFFFF</color>
+    <color name="md_primary_container">#D3E9FA</color>
+    <color name="md_on_primary_container">#072F49</color>
+
+    <color name="md_secondary">#5C5A72</color>
+    <color name="md_on_secondary">#FFFFFF</color>
+    <color name="md_secondary_container">#E4E1F5</color>
+    <color name="md_on_secondary_container">#19172B</color>
+
+    <color name="md_tertiary">#A33D6E</color>
+    <color name="md_on_tertiary">#FFFFFF</color>
+    <color name="md_tertiary_container">#FFD9E9</color>
+    <color name="md_on_tertiary_container">#3A0A26</color>
+
+    <color name="md_error">#C7261D</color>
+    <color name="md_on_error">#FFFFFF</color>
+    <color name="md_error_container">#FAE0DD</color>
+    <color name="md_on_error_container">#450F0A</color>
+
+    <color name="md_background">#FAFAFD</color>
+    <color name="md_on_background">#131319</color>
+    <color name="md_surface">#FFFFFF</color>
+    <color name="md_on_surface">#131319</color>
+    <color name="md_surface_variant">#F0EFF7</color>
+    <color name="md_on_surface_variant">#5D5C6B</color>
+    <color name="md_outline">#DCDAE6</color>
+    <color name="md_outline_variant">#EAE9F1</color>
+
+    <color name="md_scrim">#000000</color>
+    <color name="md_inverse_surface">#272733</color>
+    <color name="md_inverse_on_surface">#F1F0F9</color>
+    <color name="md_inverse_primary">#7FC4EF</color>
+
+    <!-- Success / Warning / Info -->
+    <color name="success">#17875A</color>
+    <color name="success_container">#D2F3E3</color>
+    <color name="warning">#B8720E</color>
+    <color name="warning_container">#FBE6C4</color>
+    <color name="info">#2B6FD1</color>
+    <color name="info_container">#DAE7FC</color>
+
+    <!-- Dark theme -->
+    <color name="md_dark_primary">#7FC4EF</color>
+    <color name="md_dark_on_primary">#00344F</color>
+    <color name="md_dark_primary_container">#084C78</color>
+    <color name="md_dark_on_primary_container">#D3E9FA</color>
+
+    <color name="md_dark_secondary">#C7C4DC</color>
+    <color name="md_dark_on_secondary">#2E2C42</color>
+    <color name="md_dark_secondary_container">#444159</color>
+    <color name="md_dark_on_secondary_container">#E4E1F5</color>
+
+    <color name="md_dark_tertiary">#EDA6C8</color>
+    <color name="md_dark_on_tertiary">#4B0F31</color>
+    <color name="md_dark_tertiary_container">#672548</color>
+    <color name="md_dark_on_tertiary_container">#FFD9E9</color>
+
+    <color name="md_dark_error">#F2AFA8</color>
+    <color name="md_dark_on_error">#651A11</color>
+    <color name="md_dark_error_container">#862921</color>
+    <color name="md_dark_on_error_container">#FAE0DD</color>
+
+    <color name="md_dark_background">#0E0E13</color>
+    <color name="md_dark_on_background">#E7E6F0</color>
+    <color name="md_dark_surface">#17171F</color>
+    <color name="md_dark_on_surface">#E7E6F0</color>
+    <color name="md_dark_surface_variant">#29283A</color>
+    <color name="md_dark_on_surface_variant">#ACAABD</color>
+    <color name="md_dark_outline">#4C4A5E</color>
+    <color name="md_dark_outline_variant">#2C2B3B</color>
+
+    <color name="md_dark_inverse_surface">#E7E6F0</color>
+    <color name="md_dark_inverse_on_surface">#272733</color>
+    <color name="md_dark_inverse_primary">#0B72B9</color>
+
+    <!-- Splash — true AMOLED black so the splash matches a dark/black window -->
+    <color name="splash_background">#000000</color>
+</resources>

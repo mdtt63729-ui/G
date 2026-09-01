@@ -1,0 +1,94 @@
+query GetRepoDashboard($owner: String!, $name: String!) {
+  repository(owner: $owner, name: $name) {
+    name
+    description
+    stargazerCount
+    forkCount
+    url
+    defaultBranchRef {
+      name
+      target {
+        ... on Commit {
+          history(first: 1) {
+            nodes {
+              message
+              committedDate
+              oid
+              author {
+                name
+                email
+              }
+              statusCheckRollup {
+                state
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+query GetRepoWorkflows($owner: String!, $name: String!) {
+  repository(owner: $owner, name: $name) {
+    object(expression: "HEAD:.github/workflows") {
+      ... on Tree {
+        entries {
+          name
+          path
+          type
+        }
+      }
+    }
+  }
+}
+
+query GetAuthenticatedUser {
+  viewer {
+    login
+    avatarUrl
+    name
+    bio
+    repositories(first: 10, orderBy: {field: UPDATED_AT, direction: DESC}) {
+      totalCount
+      nodes {
+        name
+        fullName
+        description
+        isPrivate
+        url
+        updatedAt
+        defaultBranchRef {
+          name
+        }
+        stargazerCount
+        forkCount
+      }
+    }
+  }
+}
+
+query GetWorkflowRuns($owner: String!, $name: String!, $first: Int!) {
+  repository(owner: $owner, name: $name) {
+    workflowRuns(first: $first, orderBy: {field: CREATED_AT, direction: DESC}) {
+      totalCount
+      nodes {
+        databaseId
+        workflowName
+        displayTitle
+        status
+        conclusion
+        event
+        headBranch
+        headSha
+        createdAt
+        updatedAt
+        actor {
+          login
+          avatarUrl
+        }
+        url
+      }
+    }
+  }
+}
